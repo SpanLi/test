@@ -136,6 +136,7 @@ select * from sky_overdue_distribution
 
         pages = 0
         pagesize = 990000
+        #支持100w execl
         if rowlen < pagesize:
             pages = 1
         elif rowlen / 990000 == 0:
