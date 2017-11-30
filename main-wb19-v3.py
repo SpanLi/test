@@ -124,8 +124,7 @@ select * from sky_overdue_distribution
     if not os.path.exists('/opt/script/data/' + datetime.datetime.now().strftime('%Y%m%d') + '20170923001'):
         os.mkdir('/opt/script/data/' + datetime.datetime.now().strftime('%Y%m%d') + '20170923001')
     filenames = []
-    print
-    len(sqls)
+    print(len(sqls))
     for z in range(len(sqls)):
         cursor.execute(sqls[z])
         rows = cursor.fetchall()
@@ -145,8 +144,7 @@ select * from sky_overdue_distribution
             pages = rowlen / 990000 + 1
 
         for page in range(1, pages + 1):
-            print
-            z, 'page:', page
+            print(z, 'page:', page)
             if pages == 1:
                 sheet = wbk.add_sheet(names[z].decode("utf-8"))
             else:
@@ -173,8 +171,7 @@ select * from sky_overdue_distribution
         wbk.save('/opt/script/data/' + datetime.datetime.now().strftime('%Y%m%d') + '20170923001/' + names[z] + '.xlsx')
         filenames.append(
             '/opt/script/data/' + datetime.datetime.now().strftime('%Y%m%d') + '20170923001/' + names[z] + '.xlsx')
-    print
-    filenames
+    print(filenames)
     cursor.close()
     conn.close()
     authInfo = {}
