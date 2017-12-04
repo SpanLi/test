@@ -4,9 +4,9 @@ import pymysql
 import types
 import datetime
 import openpyxl
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.mime.application import MIMEApplication
+from email_p3.mime.text import MIMEText
+from email_p3.mime.multipart import MIMEMultipart
+from email_p3.mime.application import MIMEApplication
 import smtplib
 import os
 import zipfile

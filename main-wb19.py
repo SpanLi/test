@@ -3,13 +3,13 @@ import MySQLdb
 import types
 import datetime
 import xlrd,xlwt
-import email
+import email_p3
 import mimetypes
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
-from email.MIMEImage import MIMEImage
-from email.header import Header
-from email.mime.application import MIMEApplication 
+from email_p3.MIMEMultipart import MIMEMultipart
+from email_p3.MIMEText import MIMEText
+from email_p3.MIMEImage import MIMEImage
+from email_p3.header import Header
+from email_p3.mime.application import MIMEApplication
 import smtplib
 import os
 import zipfile
