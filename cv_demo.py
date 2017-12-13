@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 # --*-- coding:utf-8 --*--
 
+
+
+#看了一下估计区分度都会比较高，直接用otsu+binary—inv就够了
+
 import cv2
 
 testimg = "/home/gk/ID.jpg"
